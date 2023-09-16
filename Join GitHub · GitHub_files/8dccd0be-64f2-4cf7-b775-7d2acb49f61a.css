@@ -1,0 +1,475 @@
+/*fonts*/
+/* SFMono-Regular */
+@font-face {
+  font-family: SFMono-Regular;
+  src: url("https://client-api.arkoselabs.com/cdn/fc/assets/style-manager/fonts/390e06b9-6703-4e43-b544-b9a6b81196ca.otf") format("opentype");
+}
+
+/* SFMono-Bold */
+@font-face {
+  font-family: SFMono-Bold;
+  src: url("https://client-api.arkoselabs.com/cdn/fc/assets/style-manager/fonts/f4b16cae-5023-464e-8bac-d3aff7b5b61e.otf") format("opentype");
+}
+
+/*
+  Note by default headings use the bold variant.
+*/
+
+/*Globals*/
+.text {
+  font-family: SFMono-Regular;
+  color: rgb(80, 80, 80);
+}
+
+.button {
+  font-family: Helvetica;
+}
+
+
+.h2 {
+  font-family: SFMono-Regular;
+}
+
+
+div.box.container {
+  background-color: #0c162d;
+  border-color: #0c162d;
+}
+
+.text {
+  color: #fff;
+}
+
+
+
+/*button*/
+button.button {
+  background: transparent;
+  padding: 12px 20px;
+  border: 1px solid #627597;
+  border-radius: 6px;
+  text-align: left;
+  font-weight: normal;
+  color: #fff;
+}
+
+button.button:hover {
+  border: 1px solid #0DBC79;
+  color: #0DBC79;
+}
+
+button.button:focus {
+  outline: unset;
+  outline-offset: 2px;
+  border-color: #fff;
+}
+
+
+/*Navigation*/
+div.navigation.box {
+  height: 55px;
+  bottom: 0px;
+  background-color: transparent;
+  width: 100%;
+  padding: 0;
+  align-items: center;
+}
+
+.navigation button {
+  display: inline-block;
+  background: transparent;
+  padding: 5px 30px;
+  border: 1px solid #627597;
+  width: 100%;
+  margin: 0 2px;
+  flex: 1;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.navigation button.audio-button.icon-button:hover {
+  border: 1px solid #0DBC79;
+  color: #0DBC79;
+}
+
+.navigation button.audio-button.icon-button:focus {
+  outline: unset;
+  outline-offset: 2px;
+  border-color: #fff;
+}
+
+.navigation button.restart-button.icon-button:hover {
+  border: 1px solid #0DBC79;
+  color: #0DBC79;
+}
+
+.navigation button.restart-button.icon-button:focus {
+  outline: unset;
+  outline-offset: 2px;
+  border-color: #fff;
+}
+
+.navigation button svg path {
+  fill: #fff;
+}
+
+
+/*Home*/
+
+div.home.box.screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home p.text {
+  text-align: left;
+  width: 100%;
+}
+
+
+/*Tile Game*/
+
+.tile-game h2.text {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: -5px;
+  margin-bottom: -4px;
+  color: #00cfc8;
+}
+
+.tile-game p.text {
+  margin-top: 0px;
+}
+
+
+/*tilegame Fail*/
+div.tile-game-fail.box.screen {
+  align-items: center;
+}
+
+div.alert.box {
+  background: transparent;
+}
+
+h2.tile-game-alert.text,
+.tile-game-fail p.text {
+  margin: 40px 0 0px;
+  color: #000;
+  font-weight: normal;
+  color: #00cfc8;
+  align-self: flex-start;
+  text-align: left;
+  font-size: 18px;
+}
+
+.tile-game-fail p.text {
+  order: 0;
+  margin: 5px 0px 15px;
+}
+
+.tile-game-fail div.box {
+  position: relative;
+  order: 1;
+}
+
+.tile-game-fail svg {
+  position: absolute;
+  top: 5px;
+  left: 12px;
+}
+
+.tile-game-fail button.button {
+  order: 2;
+}
+
+
+/*audio-mode*/
+
+.audio-mode button {
+  padding: 8px 15px;
+}
+
+.audio-game button.play-button {
+  color: #fff;
+  border-color: #fff;
+}
+
+.audio-game button.play-button svg path {
+  fill: #fff;
+}
+
+.audio-game button.button {
+  margin-bottom: 0%;
+}
+
+.audio-game h2.heading.text {
+  margin-bottom: -14px;
+  margin-top: 2%;
+  font-size: 16px;
+}
+
+.audio-game p.text {
+  margin-bottom: -10PX;
+}
+
+.audio-game button.play-button {
+  margin-bottom: 3%;
+}
+
+.audio-game input.answer-input {
+  margin-bottom: -16px;
+}
+
+
+.audio-game button.button {
+  margin-bottom: -2%;
+}
+
+h2.audio-game-alert.text {
+  margin-bottom: -4%;
+  margin-top: 2%;
+}
+
+.audio-mode button.verify-button {
+  margin-bottom: -2%;
+  margin-top: 2%;
+}
+
+.audio-mode p.instructions.text {
+  margin-top: -1%;
+}
+
+h2.audio-mode-alert.text {
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.audio-mode button.play-button {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+
+/*loading*/
+
+.loading svg.loading-spinner path {
+  stroke: #fff;
+}
+
+.tile-game button.hpialt.tile.box {
+  box-shadow: none;
+}
+
+.error p.text {
+  max-width: 100%;
+}
+
+.home path {
+  display: none;
+}
+
+.home h2.heading.text {
+  margin-top: -20%;
+  font-size: 16px;
+  max-width: 100%;
+}
+
+.home p.text {
+  color: rgb(0, 207, 200);
+  font-size: 14px;
+  max-width: 100%;
+  margin-bottom: -5%;
+}
+
+
+.loading p.text {
+  color: #627597;
+}
+
+.victory h2.heading.text {
+  display: none;
+}
+
+.victory p.text {
+  display: none;
+}
+
+/*Audio game*/
+
+.audio-game p.text {
+  font-size: 14px;
+  margin-bottom: -10px;
+}
+
+.audio-game input.answer-input {
+  margin-top: 3%;
+  margin-bottom: -5%;
+}
+
+.audio-game button.play-button {
+  margin-bottom: -2px;
+}
+
+h2.audio-game-alert.text {
+  color: rgb(0, 207, 200);
+  font-family: SFMono-Bold;
+  font-size: 16px;
+  margin-top: 3%;
+  margin-bottom: -3%;
+}
+
+form.audio-mode.box.screen {
+  padding-top: 10%;
+}
+
+h2.audio-mode-alert.text {
+  color: rgb(0, 207, 200);
+  font-family: SFMono-Bold;
+  font-size: 16px;
+  margin-top: 3%;
+  text-align: center;
+  margin-bottom: -6%;
+}
+
+.match-game h2.text {
+  color: rgb(0, 207, 200);
+  font-size: 14px;
+  margin-top: 0%;
+  margin-bottom: -2%;
+}
+
+h2.match-game-alert.text {
+  color: rgb(0, 207, 200);
+  font-family: SFMono-Bold;
+  font-size: 16px;
+  margin-top: 1%;
+  margin-bottom: -1%;
+}
+
+.match-game-fail p.text {
+  color: rgb(0, 207, 200);
+  font-family: SFMono-Regular;
+  font-size: 14px;
+  margin-top: -2.8%;
+  margin-bottom: 0%;
+}
+
+
+/*progress*/
+.progress div.progress-section-container,
+.progress div.progress-section-fill {
+  background: #627597;
+  height: 12px;
+}
+
+.progress div.progress-section-fill {
+  background: rgb(13, 188, 121);
+  border-radius: 6px;
+}
+
+.progress div.progress-section-container:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.progress div.progress-section-container:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+div.progress.box.screen {
+  background-color: #0c162d;
+}
+
+
+.tile-game div.box.challenge-container {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.match-game-fail div.example-container.box {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  justify-content: space-evenly;
+}
+
+.match-game div.box.challenge-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: space-evenly;
+}
+
+/*media queries for smaller devices*/
+@media screen and (max-width:375px) {
+  .tile-game div.box.challenge-container {
+    width: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    display: initial;
+  }
+
+  h2.tile-game-alert.text,
+  .tile-game-fail p.text {
+    font-size: 14px;
+  }
+
+  .tile-game-fail p.text {
+    margin-left: 8px;
+  }
+
+  .tile-game p.text {
+    font-size: 12px;
+    margin-bottom: -10px;
+    margin-top: 0px;
+  }
+
+  .tile-game h2.text {
+    margin-top: -10px;
+    margin-bottom: -14px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  /* Footer */
+  .navigation {
+    height: auto;
+    padding: 0 50px;
+    padding-bottom: 0.25rem;
+  }
+
+  div.navigation.box {
+    height: 50px;
+    bottom: 8px;
+  }
+
+  .navigation .icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.25rem;
+  }
+
+  .navigation .icon-button svg {
+    transform: scale(0.75);
+    margin-right: 0.25rem;
+  }
+}
+
+.match-game h2.text {
+  font-size: 14px;
+}
+
+.match-game button.button {
+  margin-top: -10%;
+}
+
+.match-game h2.text {
+  margin-bottom: -5%;
+}
+
+.match-game-fail button.button {
+  margin-bottom: -5%;
+}
